@@ -11,4 +11,25 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
  *
  */
 @JsonInclude(value = Include.NON_NULL)
-public class WalletDto extends BaseDto{}
+public class WalletDto extends BaseDto{
+	
+	private String password;
+
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
+	
+	
+}
